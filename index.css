@@ -1,0 +1,39 @@
+.container {
+    margin: 0 10px;
+    background: linear-gradient(to right, rgb(156, 238, 211), rgb(61, 234, 240));
+    padding: 0.6%;
+}
+
+.container h2 {
+    color: #333;
+    text-decoration: underline;
+}
+
+.container p {
+    text-align: justify;
+    font-size: 18px;
+}
+
+.container p::first-letter {
+    font-size: 25px;
+    color: red;
+}
+
+.container img {
+    width: 200px;
+    height: 150px;
+}
+
+.container .img1,
+.container .img3,
+.container .img5 {
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.container .img2,
+.container .img4,
+.container .img6 {
+    float: right;
+    margin: 0 0 20px 20px;
+}

@@ -1,0 +1,176 @@
+.container {
+    display: flex;
+    margin: 0 10px;
+    padding: 1%;
+    background: linear-gradient(to right, rgb(156, 238, 211), rgb(61, 234, 240));
+    background-size: cover;
+}
+
+.container .articles {
+    width: 79%;
+    margin: 0 10px;
+}
+
+.container .article {
+    background-color: white;
+    margin-top: 1%;
+    padding: 0.8%;
+    border: 2px solid #333;
+}
+
+.container .article p {
+    font-size: 18px;
+    text-align: justify;
+}
+
+.container .titulo-group {
+    display: flex;
+}
+
+.container .titulo-group h3 {
+    position: relative;
+    left: 3%;
+    font-size: 24px;
+}
+
+.container .titulo-group img {
+    width: 7%;
+}
+
+.container .titulo-group h3:hover {
+    font-size: 25px;
+    color: #007bff;
+}
+
+.container .lateral {
+    background-color: white;
+    width: 20%;
+    margin: 0.8% 1% 0 1%;
+    border: 2px solid #333;
+    padding: 1%;
+}
+
+.lateral div {
+    height: 30%;
+    border-bottom: 2px solid #ccc;
+    margin-top: 10%;
+    padding-left: 1%;
+}
+
+.lateral label,
+small {
+    margin: 15% 0;
+    padding: 1%;
+}
+
+
+.lateral input[type="text"],
+.lateral input[type="email"],
+.lateral input[type="password"] {
+    width: 92%;
+    height: 7%;
+    margin: 5px;
+    border: 2px inset #ccc;
+    border-radius: 10px;
+}
+
+.lateral input[type="text"]:focus,
+.lateral input[type="email"]:focus,
+.lateral input[type="password"]:focus {
+    border: 2px solid #007bff;
+    outline: none;
+    box-shadow: 1px 2px 2px 1px #007bff;
+}
+
+.lateral input[type="submit"] {
+    width: 30%;
+    height: 7%;
+    margin: 5% 0 5% 2%;
+    border-radius: 10px;
+}
+
+.lateral input[type="radio"] {
+    margin-top: 5%;
+    display: block;
+}
+
+.lateral .radio-group {
+    padding-left: 4%;
+}
+
+@media (max-width: 1068px) {
+
+    .lateral input[type="text"],
+    .lateral input[type="email"],
+    .lateral input[type="password"] {
+        width: 89%;
+    }
+
+    .lateral input[type="submit"] {
+        width: 50%;
+    }
+
+    .container .titulo-group img {
+        width: 8%;
+    }
+}
+
+@media (max-width: 896px) {
+    .container {
+        display: block;
+    }
+
+    .container .articles {
+        width: 100%;
+        margin: 0 10px 0 0;
+    }
+
+    .container .lateral {
+        display: block;
+        width: 97.5%;
+        margin: 1% 0 1% 0;
+        height: 1400px;
+    }
+
+    .lateral div {
+        margin-top: 4%;
+        padding-left: 1%;
+    }
+
+    .lateral input[type="text"],
+    .lateral input[type="email"],
+    .lateral input[type="password"] {
+        width: 95%;
+        height: 8%;
+    }
+
+    .lateral input[type="submit"] {
+        height: 8%;
+    }
+
+    .container .titulo-group img {
+        padding-left: 1%;
+    } 
+
+}
+
+@media (max-width: 666px) {
+    .container .titulo-group img {
+        width: 9%;
+        padding-left: 1.5%;
+    }   
+}
+
+@media (max-width: 576px) {
+    .container .titulo-group img {
+        width: 10%;
+        padding-left: 2%;
+    }   
+}
+
+@media (max-width: 576px) {
+    .container .titulo-group img {
+        width: 11%;
+        padding-left: 2.5%;
+    }   
+}
